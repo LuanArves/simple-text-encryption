@@ -1,0 +1,159 @@
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container-main {
+    display: flex;
+    justify-content: space-between; /* Isso alinha as divs dos textarea nas extremidades */
+    width: 96%; /* Ajuste a largura conforme necessário */
+    margin: auto; /* Isso centraliza o container-main */
+    margin-top: 0px;
+}
+
+header{
+    margin-top: 23px;
+}
+
+.container-esquerdo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    align-items: flex-end
+}
+
+.container-esquerdo textarea {
+    width: 600px;
+    height: 450px;
+    resize: none;
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: auto;
+    color: #fff;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row; /* Ajuste para organizar os botões verticalmente */
+}
+
+.container-buttons button {
+    margin-bottom: 10px;
+    height: 40px;
+    width: 250px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid #175caf;
+    
+}
+.container-direito button {
+    margin-bottom: 10px;
+    height: 40px;
+    width: 250px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid #175caf;
+}
+
+#clipboard {
+    margin-bottom: 10px;
+    height: 40px;
+    width: 250px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid #175caf;
+}
+
+.container-direito {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: center;
+    background-color: #383737;
+    border-radius: 30px;
+    overflow: hidden; 
+    width: 25%; 
+}
+
+.container-direito textarea {
+    width: 300px;
+    height: 500px;
+    resize: none;
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 2px;
+    color: #fff;
+    overflow: auto; 
+    padding-left: 10px; 
+ 
+}
+
+button {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    height: 40px;
+    width: 250px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid #175caf;
+  
+}
+button:hover {
+    background-color: #0A3871;
+}
+
+.gif-animate {
+    width: 20vw;
+}
+
+#inputText1::placeholder{
+    color: #a6cbf7;
+    font-size: 20px;
+}
+
+.mensagem{
+    width: 20vw;
+    margin: 10px auto;
+    padding: 0.5px;
+    align-items: center;
+}
+
+
+h5{
+    color: var(--Gray-gray-500, #a6cbf7);
+    text-align: center;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 28.8px */
+    margin: 5px 0;
+
+}
+h6{
+    color: var(--Gray-gray-400, #798591);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 10;
+    line-height: 100%; /* 24px */
+    margin: 5px 0;
+}
