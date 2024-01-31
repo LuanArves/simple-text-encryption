@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/Logo.svg" alt="Logo da Empresa">
+        </div>
+    </header>
+
+    <div class="container-main">
+        <div class="container-esquerdo">
+            <textarea id="inputText1" placeholder="Digite seu texto..."></textarea>
+            <p>*Não utilizar caracteres ou letras maiscúlas</p>
+            <div class="container-buttons">
+                <button id="codificar" onclick="codificar()">Codificar</button>
+                <button id="decotificar" onclick="decodificar()">Decodificar</button>
+            </div>
+        </div>
+        <div class="container-direito">
+            <textarea id="inputText2" placeholder="" oninput="toggleImage()" readonly ></textarea>
+            <img src="images/curiosity-search-animate.svg" class="gif-animate" alt="buscando"> 
+            <div class="mensagem">
+                <h5 class="h5">Nenhuma mensagem encontrada</h5>
+                <h6 class="h6">Digite um texto que você deseja criptografar ou descriptografar.</h6>
+            </div>
+            <button class="clipboard" onclick="clipboard()">Copiar</button>
+        </div>
+       
+    </div>
+    <script>
+         window.onload = function () {
+        toggleImage(); 
+    };
+    </script>
+</body>
+</html>
