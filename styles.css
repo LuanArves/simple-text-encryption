@@ -18,7 +18,7 @@ body {
     margin-top: 0px;
 }
 
-header{
+header {
     margin-top: 23px;
 }
 
@@ -26,7 +26,7 @@ header{
     display: flex;
     flex-direction: column;
     margin-right: 20px;
-    align-items: flex-end
+    align-items: flex-end;
 }
 
 .container-esquerdo textarea {
@@ -49,24 +49,8 @@ header{
     flex-direction: row;
 }
 
-.container-buttons button {
-    margin-bottom: 10px;
-    height: 40px;
-    width: 250px;
-    background-color: transparent;
-    border-radius: 30px;
-    border: 2px solid #175caf;
-    
-}
-.container-direito button {
-    margin-bottom: 10px;
-    height: 40px;
-    width: 250px;
-    background-color: transparent;
-    border-radius: 30px;
-    border: 2px solid #175caf;
-}
-
+.container-buttons button,
+.container-direito button,
 #clipboard {
     margin-bottom: 10px;
     height: 40px;
@@ -83,8 +67,8 @@ header{
     align-items: center;
     background-color: #383737;
     border-radius: 30px;
-    overflow: hidden; 
-    width: 25%; 
+    overflow: hidden;
+    width: 25%;
 }
 
 .container-direito textarea {
@@ -98,9 +82,8 @@ header{
     outline: 0;
     padding: 2px;
     color: #fff;
-    overflow: auto; 
-    padding-left: 10px; 
- 
+    overflow: auto;
+    padding-left: 10px;
 }
 
 button {
@@ -115,8 +98,8 @@ button {
     background-color: transparent;
     border-radius: 30px;
     border: 2px solid #175caf;
-  
 }
+
 button:hover {
     background-color: #0A3871;
 }
@@ -125,35 +108,49 @@ button:hover {
     width: 20vw;
 }
 
-#inputText1::placeholder{
+#inputText1::placeholder {
     color: #a6cbf7;
     font-size: 20px;
 }
 
-.mensagem{
+.mensagem {
     width: 20vw;
     margin: 10px auto;
     padding: 0.5px;
     align-items: center;
 }
 
-
-h5{
-    color: var(--Gray-gray-500, #a6cbf7);
+h5 {
+    color: var(--gray-gray-500, #a6cbf7);
     text-align: center;
     font-size: 23px;
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
     margin: 5px 0;
-
 }
-h6{
-    color: var(--Gray-gray-400, #798591);
+
+h6 {
+    color: var(--gray-gray-400, #798591);
     text-align: center;
     font-size: 14px;
     font-style: normal;
     font-weight: 10;
     line-height: 100%;
     margin: 5px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-main {
+        flex-direction: column;
+    }
+
+    .container-direito {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .container-direito .gif-animate {
+        display: none;
+    }
 }
