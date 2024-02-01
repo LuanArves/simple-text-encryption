@@ -140,17 +140,42 @@ h6 {
     margin: 5px 0;
 }
 
+p {
+    font-size: small;
+    color: #8a8a8a;
+    margin-right: 58%;
+}
+
 @media only screen and (max-width: 768px) {
     .container-main {
         flex-direction: column;
     }
 
     .container-direito {
-        width: 100%;
+        width: 90%;
         margin-top: 10px;
+        align-items: center;
+        padding: 0%;
+        margin-right: 100px;
+
+    }
+
+    .container-esquerdo{
+        margin-left: 10px;
     }
 
     .container-direito .gif-animate {
-        display: none;
+        visibility: hidden;
+    }
+
+    .mensagem {
+        width: auto;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .mensagem h5,
+    .mensagem h6 {
+        margin: 0; /* Remova qualquer margem interna dos elementos h5 e h6 */
     }
 }
