@@ -161,7 +161,11 @@ p {
     }
 
     .container-esquerdo{
-        margin-left: 10px;
+        width: 100%;
+    }
+
+    .container-esquerdo textarea {
+        width: 100%;
     }
 
     .container-direito .gif-animate {
